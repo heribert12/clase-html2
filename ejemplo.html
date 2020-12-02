@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Login</title>
+    <style>
+        body, html{
+            padding: 0;
+            margin: 0;
+        }
+        ul li{
+            display: inline;
+        }
+        ul li a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            margin: 10px;
+            padding: 10px;
+        }
+
+        ul{
+            background-color: royalblue;
+            text-align: right;
+            margin: 0px;
+            padding: 10px;
+        }
+        .negrilla{
+            font-weight: bold !important;
+        }
+        input[type="text"]{
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="">Inicio</a></li>
+        <li><a href="">Noticias</a></li>
+        <li><a href="">Login</a></li>
+        <li><a href="">Servicios</a></li>
+    </ul>
+    <div>
+        <h2>Autenticacion de usuarios</h2>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <input class="boton negrilla" type="submit" value="Enviar">
+        <input class="boton1" type="submit" value="Cancelar">
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write("Hola mundo")
+       // alert("Mensaje desde Javascript") //mensaje
+        var a = 10; //global
+        let b = 20; //local
+        const c = 50; //constante
+
+        try{
+            c=80;
+        }catch{
+            console.info("hubo un error");
+        }
+
+        document.writeln("valor de a: " + a)
+        document.write("<br>")
+        document.writeln("valor de b: " + b)
+        document.write("<br>")
+        document.writeln("valor de c: " + c)
+        document.write("<br>")
+
+        /*var nombre = prompt("su nombre");
+        alert("Hola, ", nombre);*/
+        /*a=prompt("valor 1");
+        b=prompt("valor 2");
+        var r = parseInt(a) + parseInt(b);
+        document.writeln("<h1>Resultado a + b: "+ r +"</h1>");*/
+        var  fecha = new Date();
+        if(fecha.getHours>18){
+            document.write("Buenas noches");
+        } else if (fecha.getHours>12){
+            document.write("Buenas tardes")
+        } else if (fecha.getHours()>6){
+            document.write("Buenos dias")
+        }
+
+        function sumar(){
+            let v1 = document.getElementById("val1").value;
+            let v2 = document.getElementById("val2").value;
+            let r = document.getElementById("resultado");
+            if(v1.lenght>0 && v2.lenght>0 && v1.trim() != "" && v2.trim() != ""){
+                r.value=parseInt(v1) + parseInt(v2);
+            } else {
+                alert("digite los numeros")
+            }
+            
+        }
+        
+    </script>
+</head>
+<body>
+    <form action="">
+    valor 1 <input type="text" name="" id="val1" value="">
+    valor 2 <input type="text" name="" id="val2" value="">
+    Resultado <input type="text" name="" id="resultado" readonly>
+    <input type="button" value="Sumar" onclick="sumar()">  
+    </form>  
+</body>
+</html>
